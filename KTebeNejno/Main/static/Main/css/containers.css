@@ -1,0 +1,39 @@
+.row_container{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.column_container{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.column_container_element{
+    padding: 10px;
+    margin-bottom: 10px;
+    flex: 0 0 auto;
+}
+
+.row_container_element{
+    padding: 10px;
+    margin-right: 10px;
+    flex: 0 0 auto;
+}
+
+.row_container_element__expanding{
+    padding: 10px;
+    margin-right: 10px;
+    flex: 1 0 auto;
+}
+
+.column_container_element{
+    padding: 10px;
+    margin-bottom: 10px;
+    flex: 0 0 auto;
+}
+
+.column_container_element__expanding{
+    padding: 10px;
+    margin-bottom: 10px;
+    flex: 1 0 auto;
+}

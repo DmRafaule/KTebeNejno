@@ -1,0 +1,29 @@
+.comment{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin:10px;
+    padding: 10px;
+}
+
+.comment_header{
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.comment_header__rating{
+    padding: 5px;
+    margin-right: 10px;
+
+}
+
+.comment_header__time{
+    padding: 5px;
+
+}
+
+.comment_body{
+    padding: 10px;
+}

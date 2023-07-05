@@ -1,0 +1,145 @@
+/* Top button */
+.button_top{
+    margin: auto;
+    padding: 15px 20px;
+    transition: all .2s ease;
+    align-items: center;
+}
+.button_top > img{
+    width: 32px;
+    height: 32px;
+    z-index: 10;
+}
+
+.button_top > a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.cta{
+  position: relative;
+  margin: auto;
+  padding: 19px 22px;
+  transition: all .2s ease;
+}
+.cta:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    background: #FFAB9D;
+    width: 56px;
+    height: 56px;
+    transition: all .3s ease;
+}
+.cta:hover > span{
+    display: inline;
+}
+span{
+    position: relative;
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+.cta:hover:before{
+    width: 100%;
+}
+.cta:active{
+    transform: scale(.96);
+}
+
+/* Bottom button */
+.button_bottom > a{
+  display: block;
+  font-size: 24px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  border-bottom: 2px solid #333;
+  border-radius: 10px;
+  padding: 10px;
+  letter-spacing: 2px;
+  transition: all .25s;
+}
+
+.button_bottom > a:hover{
+  letter-spacing: 15px;
+}
+
+
+/* Next button */
+.button_next {
+  border: none;
+  border-radius: 20px;
+  font-family: 'Lato';
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.button_next:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* Pseudo elements for icons */
+.button_next:before {
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+.button_next {
+  background: #ae7a9f;
+  color: #000000;
+}
+
+.button_next:hover {
+  background: #9a6c8d;
+}
+
+.button_next:active {
+  background: #9a6c8d;
+  top: 2px;
+}
+
+.button_next:active ~ .comment {
+  background: #9a6c8d;
+}
+
+.button_next:before {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  line-height: 3;
+  font-size: 140%;
+  width: 60px;
+}
